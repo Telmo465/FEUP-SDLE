@@ -1,0 +1,9 @@
+{*"operation" : follow, unfollow, post, sync_posts, getResponse; "content" : ...; *ip : ; *port: ; username: }
+
+
+EXAMPLES : 
+
+{"operation" : "follow", "content": PeerInfo(), "ip" : self.ip, "port": self.port, "username": self.username}
+{"operation" : "unfollow", "content": self.username, "ip" : self.ip, "port": self.port}
+{"operation" : "get", "content": message_ID or -1, "ip" : self.ip, "port": self.port}
+{"operation" : "getResponse", "content": Message() as dictionary, "ip" : self.ip, "port": self.port}
